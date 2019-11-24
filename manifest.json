@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Open In Steam",
+  "version": "0.1",
+
+  "description": "Allows select Steam pages to be opened in Steam.",
+
+  "icons": {
+    "48": "icons/ois-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://steamcommunity.com/sharedfiles/filedetails/*"],
+      "js": ["ois.js"]
+    }
+  ]
+}
